@@ -1,6 +1,6 @@
 // - dlf
 (function () {
-  var expression = /^function\s*\(([^)]*)\)\s*\{\s*("([^"]*)")?/;
+  var expression = /^function\s*\(([^)]*)\)\s*\{\s*("([^"]*)")?/m;
   Function.prototype.docstring = function () {
     return this.toString().match(expression)[3];
   };
