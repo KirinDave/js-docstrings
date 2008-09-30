@@ -1,9 +1,4 @@
-//function extract_features(funstr) {
-//  var madness = /^function\s*\(([^)]*)\)\s*\{\s*("([^"]*)")?/;
-//  results = funstr.match(madness)
-//  return {arguments: results[1], docstring: results[3]};
-//}
-
+// - dlf
 (function () {
   var expression = /^function\s*\(([^)]*)\)\s*\{\s*("([^"]*)")?/;
   Function.prototype.docstring = function () {
@@ -29,19 +24,6 @@
     else { 
       return this.length;
     }
-  }
-  
-  meep = function(x) {
-    "Docstring Innapropriate" + "Funtimes"
-    return x + 1;
-  };
-  
-  beep = function() {
-    return arguments[0] + 1;
-  };
-  
-  feep = function() {
-    return "new line";
   }
 })();
 
